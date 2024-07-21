@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-03 22:17:03.153544",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_details_section",
+  "supplier",
+  "supplier_name",
+  "column_break_bctt",
+  "company",
+  "section_break_bkpw",
+  "user_message",
+  "column_break_ffij",
+  "response",
+  "submit",
+  "section_break_jely",
+  "available_items_and_qty",
+  "section_break_tgbn",
+  "unavailable_qty",
+  "section_break_efqz",
+  "unavailable_item",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_message",
+   "fieldtype": "Long Text",
+   "label": "User Message"
+  },
+  {
+   "fieldname": "submit",
+   "fieldtype": "Button",
+   "label": "Submit"
+  },
+  {
+   "fieldname": "response",
+   "fieldtype": "Long Text",
+   "label": "Response"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_bkpw",
+   "fieldtype": "Section Break",
+   "label": "User Message"
+  },
+  {
+   "fetch_from": "supplier.supplier_name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bctt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier_details_section",
+   "fieldtype": "Section Break",
+   "label": "Supplier Details"
+  },
+  {
+   "fieldname": "section_break_jely",
+   "fieldtype": "Section Break",
+   "label": "Available Items and Qty"
+  },
+  {
+   "fieldname": "section_break_tgbn",
+   "fieldtype": "Section Break",
+   "label": "Unavailable Qty"
+  },
+  {
+   "fieldname": "unavailable_qty",
+   "fieldtype": "Table",
+   "options": "Unavailable Qty Details"
+  },
+  {
+   "fieldname": "available_items_and_qty",
+   "fieldtype": "Table",
+   "options": "Available Items and Qty Details"
+  },
+  {
+   "fieldname": "section_break_efqz",
+   "fieldtype": "Section Break",
+   "label": "Unavailable Item"
+  },
+  {
+   "fieldname": "unavailable_item",
+   "fieldtype": "Table",
+   "options": "Unavailable Item Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "AI Worker",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_ffij",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-17 14:16:29.305854",
+ "modified_by": "Administrator",
+ "module": "Masar AI",
+ "name": "AI Worker",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

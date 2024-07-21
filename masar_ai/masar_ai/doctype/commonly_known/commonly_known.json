@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{doc_type}-{document}",
+ "creation": "2024-07-06 18:06:52.375558",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_type",
+  "submit",
+  "column_break_urlv",
+  "document",
+  "section_break_scrh",
+  "commonly_known"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "DocType",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Document",
+   "options": "doc_type"
+  },
+  {
+   "fieldname": "section_break_scrh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "commonly_known",
+   "fieldtype": "Long Text",
+   "label": "Commonly Known As"
+  },
+  {
+   "fieldname": "submit",
+   "fieldtype": "Button",
+   "label": "Submit"
+  },
+  {
+   "fieldname": "column_break_urlv",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-06 18:35:34.130783",
+ "modified_by": "Administrator",
+ "module": "Masar AI",
+ "name": "Commonly Known",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
